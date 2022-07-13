@@ -1,4 +1,4 @@
-import { ListItem, ListItemAvatar, Avatar, ListItemText, CardMedia, CardContent, Card, Typography, CardActions, Button } from "@mui/material";
+import { ListItem, ListItemAvatar, Avatar, ListItemText, CardMedia, CardContent, Card, Typography, CardActions, Button, CardHeader } from "@mui/material";
 import {Product} from "../../app/models/product";
 
 
@@ -8,25 +8,36 @@ interface Props {
 export default function ProductCard({product}: Props) {
 	return (
         <Card>
+            <CardHeader
+                avatar={
+                <Avatar sx={{bgcolor:'secondary.main'}}>
+                        {product.name.charAt(0).toUpperCase()}
+                    </Avatar>
+                }
+                title={product.name}
+                titleTyopgraphyProps={{
+                    sx: {fontweight: 'bold',color: 'primary.main'}
+                }}
+           />
             <CardMedia
-                component="img"
-                height="140"
-                image="http://picsum.photos/200"
-                alt="green iguana"
+               
+               sx={{height:140, backgroundSize: "contain"}}
+                image={product.pictureUrl}
+                title ={product.name}
+              
             />
             <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                    Lizard
+                <Typography gutterBottom color='secondary' variant="h5" component="div">
+                    ${(product.price/100).toFixed(2)}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                    species, ranging across all continents except Antarctica
+             {product.brand}/ {product.type}
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
+                <Button size="small">Add to Cart</Button>
+                <Button size="small">View</Button>
             </CardActions>
         </Card>
-        )
+)
 }
