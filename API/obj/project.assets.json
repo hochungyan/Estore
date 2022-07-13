@@ -1255,27 +1255,30 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hochu\\.nuget\\packages\\": {},
+    "C:\\Users\\cyanho\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\JustinProject\\1\\demo\\ReStore\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\cyanho\\source\\repos\\Estore\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\JustinProject\\1\\demo\\ReStore\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\hochu\\.nuget\\packages\\",
-      "outputPath": "D:\\JustinProject\\1\\demo\\ReStore\\API\\obj\\",
+      "projectPath": "C:\\Users\\cyanho\\source\\repos\\Estore\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\cyanho\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cyanho\\source\\repos\\Estore\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\hochu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cyanho\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -1325,12 +1328,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.17, 5.0.17]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
