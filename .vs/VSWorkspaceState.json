@@ -1,6 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\client",
+    "\\client\\public",
+    "\\client\\src",
+    "\\client\\src\\app",
+    "\\client\\src\\app\\layout",
+    "\\client\\src\\features",
+    "\\client\\src\\features\\catalog"
   ],
+  "SelectedNode": "\\client\\src\\index.tsx",
   "PreviewInSolutionExplorer": false
 }
